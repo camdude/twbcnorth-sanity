@@ -1,6 +1,9 @@
 import S from "@sanity/desk-tool/structure-builder";
 
-const hiddenDocTypes = (listItem) => !["about", "registration", "conference", "contact" ].includes(listItem.getId());
+const hiddenDocTypes = (listItem) =>
+  !["about", "registration", "conference", "contact", "settings"].includes(
+    listItem.getId()
+  );
 
 export default () =>
   S.list()
@@ -14,7 +17,7 @@ export default () =>
             .schemaType("about")
             .documentId("singleton-about")
         ),
-        S.listItem()
+      S.listItem()
         .title("Registration Form")
         .child(
           S.editor()
@@ -22,15 +25,15 @@ export default () =>
             .schemaType("registration")
             .documentId("singleton-registration")
         ),
-        S.listItem()
-        .title("Conference")
+      S.listItem()
+        .title("Conference Page")
         .child(
           S.editor()
             .id("conference")
             .schemaType("conference")
             .documentId("singleton-conference")
         ),
-        S.listItem()
+      S.listItem()
         .title("Contact Page")
         .child(
           S.editor()
@@ -39,4 +42,12 @@ export default () =>
             .documentId("singleton-contact")
         ),
       ...S.documentTypeListItems().filter(hiddenDocTypes),
+      S.listItem()
+        .title("Settings")
+        .child(
+          S.editor()
+            .id("settings")
+            .schemaType("settings")
+            .documentId("singleton-settings")
+        ),
     ]);

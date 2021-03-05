@@ -8,6 +8,7 @@ import singletonContact from './singletonContact'
 import singletonConference from "./singletonConference";
 import singletonRegistration from "./singletonRegistration";
 import talks from "./talks";
+import singletonSettings from "./singletonSettings";
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -20,6 +21,7 @@ export default createSchema({
     singletonRegistration,
     singletonConference,
     talks,
-    singletonContact
+    singletonContact,
+    singletonSettings
   ])
 });

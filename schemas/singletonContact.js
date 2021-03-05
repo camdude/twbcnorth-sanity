@@ -23,7 +23,7 @@ export default {
       title: "Email",
       name: "email",
       description: "Main email to be contacted by.",
-      type: "string",
+      type: "email",
       validation: (Rule) => Rule.required(),
     },
     {
