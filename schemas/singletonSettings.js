@@ -38,28 +38,28 @@ export default {
         },
       ],
     },
-    // {
-    //   title: "Theme Colours",
-    //   name: "themeColours",
-    //   type: "object",
-    //   fields: [
-    //     {
-    //       name: 'primary',
-    //       title: 'Primary Colour',
-    //       type: 'color'
-    //     },
-    //     {
-    //       name: 'secondary',
-    //       title: 'Secondary Colour',
-    //       type: 'color'
-    //     },
-    //     {
-    //       name: 'tertiary',
-    //       title: 'Tertiary Colour',
-    //       type: 'color'
-    //     }
-    //   ]
-    // },
+    {
+      title: "Theme Colours",
+      name: "themeColours",
+      type: "object",
+      fields: [
+        {
+          name: 'primary',
+          title: 'Primary Colour',
+          type: 'color'
+        },
+        {
+          name: 'secondary',
+          title: 'Secondary Colour',
+          type: 'color'
+        },
+        {
+          name: 'tertiary',
+          title: 'Tertiary Colour',
+          type: 'color'
+        }
+      ]
+    },
     {
       title: "Administration Address",
       name: "adminEmail",
